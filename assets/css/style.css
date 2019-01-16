@@ -1,0 +1,98 @@
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family:Century Gothic;;
+	position: relative;
+}
+
+/* ====Navbar====== */
+
+nav{	
+	height: 50px;
+	background: rgba(0,0,0,.1);
+	font-size: 20px;
+	padding:10px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+
+}
+
+nav ul,
+nav li,
+nav a{
+	display: inline;
+	text-decoration: none;
+	list-style: none;
+	outline: none;
+	color: ghostwhite;
+}
+
+
+
+nav li{
+	margin: 0 20px;
+}
+
+nav ul{
+	position: absolute;
+	right:20px;
+}
+
+p{
+	font-family: Century Gothic;
+}
+
+
+
+/* =====Slide Images ====== */
+.slides{
+	/* height: 650px; */
+	background-color: dodgerblue;
+	 
+	
+}
+
+.slides img{
+	width: 100%;
+	height: 100%;
+}
+.about{
+	padding: 50px 160px;
+	width: 100%;
+	height: auto;
+	background-color: ghostwhite;
+	text-align: center;	
+}
+
+.about p{
+	font-size: 15px;
+}
+
+.whyus{
+	padding: 50px 160px;
+	width: 100%;
+	height: auto;
+	background-color: lightgreen;
+	text-align: center;	
+}
+
+.product-container{
+	height: 600px;
+	background-color: red;
+}
+
+
+.contact{
+	height: 200px;
+	background-color: purple;
+
+}
+
+footer{
+	margin:5px 0 0 0;
+	height: 300px;
+	background-color: grey;	
+}

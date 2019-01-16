@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      form.search input[type="text"] {
+        color: #333;
+        background-color: white;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        margin: 10px;
+        display: inline-block;
+        -ms-transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+        border: 2px solid #777;
+        width: 350px;
+        margin-right: 0px;
+        border-right: none;
+      }
+
+      form.search button {
+        color: white;
+        background-color: brown;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        margin: 10px;
+        display: inline-block;
+        -ms-transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+        border: 2px solid brown;
+        width: 120px;
+        margin-left: -3px;
+        border-left: none;
+      }
+
+      .fa-search:before {
+        content: "\f002";
+      }
+
+      .navbar-default .navbar-collapse {
+        float: right;
+        border-top: none;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .header-icons-noti-top-aft {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #111111;
+        color: white;
+        font-family: Montserrat-Medium;
+        font-size: 12px;
+      }
+
+      .fa-bell:before {
+        content: "\f0f3";
+      }
+
+      .header-icons-noti-noti {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #111111;
+        color: white;
+        font-family: Montserrat-Medium;
+        font-size: 12px;
+      }
+
+      #title {
+        display: flex;
+        justify-content: space-between;
+        background-color: blue;
+      }
+
+      #navbarTest {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container" id="title">
+        <div class="test1" style="background-color: red;">
+          <a href="index" class=" navbar-brand ">
+            <img
+              src="/assets/img/logo.png"
+              srcset="/assets/img/logo2.png 2x, img/logo3.png 3x"
+              alt="Post"
+            />
+          </a>
+        </div>
+        <div class="search-container" style="background-color: orange;">
+          <form class="search" action="/action_page.php">
+            <input class="" type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div
+          class="collapse navbar-collapse"
+          id="bs-navbar-collapse"
+          style="background-color: green;"
+        >
+          <ul class="nav navbar-nav main-navbar-nav" id="navbarTest">
+            <li>
+              <a
+                href="#xcart"
+                class=" fa fa-cart-plus"
+                onclick="toggle_visibility('myCart');"
+              >
+                Cart</a
+              >
+            </li>
+            <span class="header-icons-noti-top-aft">5</span>
+
+            <li>
+              <a
+                href="#xcart"
+                class=" fa fa-bell"
+                onclick="toggle_visibility('myNotification');"
+              ></a>
+            </li>
+            <!-- /.navbar-collapse -->
+            <span class="header-icons-noti-noti">1</span>
+
+            <li>
+              <a
+                href="#xaccount"
+                class=" fa fa-user-o"
+                onclick="toggle_visibility('myForm');"
+              >
+                Hi
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
